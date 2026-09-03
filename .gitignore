@@ -1,0 +1,26 @@
+# Raw data — large files, not committed. Downloaded fresh from Fannie Mae portal.
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/README.md
+
+# Processed data can be large too — regenerate from raw via sql/ and src/ scripts.
+data/processed/*
+!data/processed/.gitkeep
+
+# SQLite database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Python
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Env / secrets (e.g. FRED API key)
+.env
+
+# OS
+.DS_Store
